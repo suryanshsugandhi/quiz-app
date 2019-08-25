@@ -15,6 +15,17 @@
     text-align: left;
 }
 
+#question-no{
+    color:rgb(22, 180, 22);
+    font-weight: 700;
+}
+#none-selected{
+    color: #fff;
+    padding: 0 2vw;
+}
+.hidden{
+    display: none;
+}
 .card-title{
     color: #8E2DE2;
     font-size: 1.5rem;
@@ -50,9 +61,8 @@
 
 #buttons{
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #buttons button{
@@ -71,15 +81,6 @@
     color: #fff;
 }
 
-#reject{
-    background: none;
-    border: 1px solid #000;
-}
-
-#reject:hover{
-    background: #000;
-    color: #fff;
-}
 
 #leave-quiz{
     font-size: 0.8rem;

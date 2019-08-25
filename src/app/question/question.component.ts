@@ -14,4 +14,13 @@ export class QuestionComponent implements OnInit {
   selectOption(selection){
     this.selected = selection;
   }
+
+  submit(){
+    if(this.selected == null){
+      document.getElementById('none-selected').classList.remove('hidden');
+    }
+    else{
+      console.log('Next question')
+    }
+  }
 }

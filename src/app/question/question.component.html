@@ -1,6 +1,12 @@
 <div class="container">
     <div class="card mt-5">
       <div class="card-body">
+          <div id="question-no">
+            1/15
+          </div>
+          <div id="none-selected" class="bg-danger hidden">
+            Please select an option to continue!
+          </div>
             <div class="card-title">
               Who hosted Invento in 2018?
             </div> 
@@ -24,8 +30,9 @@
                     </div>
             </div>
           <div id="buttons">
-            <button class="btn btn-sm mr-2" id="accept">Submit</button>
           <a id="leave-quiz" href="#" class="text-secondary">Leave the quiz</a>
+
+            <button (click)="submit()" class="btn btn-sm mr-2" id="accept">Next</button>
 
           </div>
   
