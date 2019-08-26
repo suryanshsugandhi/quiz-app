@@ -13,6 +13,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { RouterModule, Routes } from '@angular/router'
 import { HttpClientModule }    from '@angular/common/http';
 
+
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'signup', component: SignupComponent },
@@ -41,9 +42,10 @@ const appRoutes: Routes = [
     ),
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [ ],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

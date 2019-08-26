@@ -14,7 +14,7 @@ section{
 }
 
 #logo *{
-    height: 12vh;
+    max-height: 12vh;
     width: auto;
 }
 

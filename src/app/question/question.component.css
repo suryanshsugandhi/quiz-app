@@ -13,6 +13,8 @@
 
 .card-body{
     text-align: left;
+    max-width: 30vw;
+
 }
 
 #question-no{
@@ -34,7 +36,6 @@
     font-weight: 700;
     margin-bottom: 0;
 }
-
 .option{
     margin-bottom: 2vh;    
     cursor: pointer;
@@ -47,6 +48,8 @@
     border: 1px solid black;
     border-radius: 60px;
     padding: 1vh 2vw;
+    box-shadow: 2px 3px 3px -1px rgba(0,0,0,0.3);
+
 }
 
 .option-box:hover{
@@ -68,6 +71,9 @@
 
 #buttons button{
     border-radius: 30px;
+    box-shadow: 2px 3px 3px -1px rgba(0,0,0,0.3);
+
+
 }
 
 #accept{
@@ -85,5 +91,9 @@
 
 #leave-quiz{
     font-size: 0.8rem;
+    color: #dc3545;
+}
 
+#leave-quiz:hover{
+    color: #000;
 }
