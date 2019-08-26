@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { QuestionService } from '../services/question.service'
+
 
 @Component({
   selector: 'app-question',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuestionComponent implements OnInit {
   selected = null;
-  constructor() { }
+  questions = [];
+  orderedQuestions = [];
+  currentQuestion = null;
+  constructor(private __questionService: QuestionService) { }
 
   ngOnInit() {
+    this.fetchQuestions();
   }
   selectOption(selection){
     this.selected = selection;
@@ -17,10 +23,18 @@ export class QuestionComponent implements OnInit {
 
   submit(){
     if(this.selected == null){
-      document.getElementById('none-selected').classList.remove('hidden');
+      document.getElementById('none-selected').style.visibility = 'visible';
+      document.getElementById('none-selected').style.opacity = '1';
     }
     else{
       console.log('Next question')
     }
+  }
+
+  fetchQuestions() :void {
+    this.__questionService.fetchQuestions()
+      .subscribe((question)=>{
+        this.questions.push(question);
+      });    
   }
 }

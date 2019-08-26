@@ -11,6 +11,7 @@ import { ScoreComponent } from './score/score.component';
 import { NavigationComponent } from './navigation/navigation.component';
 
 import { RouterModule, Routes } from '@angular/router'
+import { HttpClientModule }    from '@angular/common/http';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -39,7 +40,8 @@ const appRoutes: Routes = [
       { enableTracing: true } // <-- debugging purposes only
     ),
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

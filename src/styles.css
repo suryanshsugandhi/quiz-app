@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
     
     background: url('../src/assets/bg.jpg');
     background-size: cover;
@@ -9,4 +9,21 @@ body{
 
     height: 100%;
 
+    scroll-behavior: smooth;
+
+}
+
+*{
+    transition: all 0.3s;
+}
+
+a{
+    color: #8E2DE2;
+}
+a:hover{
+    color: #000;
+    text-decoration: none;
+}
+a:visited{
+    color: #8E2DE2;
 }

@@ -1,6 +1,15 @@
+section{
+    min-height: 70vh;
+}
+#info-box .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 #logo{
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
 }
 
@@ -8,23 +17,26 @@
     height: 12vh;
     width: auto;
 }
+
 #heading{
     font-size: 3rem;
     font-weight: 700;
-
     color: #8E2DE2;
+    font-family: 'Lexend Deca', sans-serif;
+    text-align: center;
 }
 #tagline{
-    font-size: 28px;
+    font-size: 20px;
+    color: #666;
+
 }
 
 ul{
-    list-style-type: square;
+    list-style-type: none;
 }
 
 #buttons .btn{
     border-radius: 30px;
-
 }
 
 #buttons #play-btn{
@@ -51,6 +63,8 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); */
     background: #000;
     color: #fff;
 }
+
+
 .card{
     background: rgba(255, 255, 255, 0.507);
     margin-top: 2vh;

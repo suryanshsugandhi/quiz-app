@@ -1,5 +1,6 @@
 .container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -9,6 +10,10 @@
     background: rgba(255, 255, 255, 0.507);
     box-shadow: 5px 6px 12px 0px rgba(0,0,0,0.3);
     min-height: 40vh;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .card-body{
@@ -63,4 +68,11 @@
 
 #buttons button img{
     width: 30px;
+}
+
+#privacy-statement{
+    max-width: 100%;
+    text-align: left;
+    color: #121212;
+    font-size: 0.8rem;
 }

@@ -20,11 +20,13 @@
     font-weight: 700;
 }
 #none-selected{
-    color: #fff;
+    color: #dc3545;
     padding: 0 2vw;
+    transition: visibility 0s, opacity 0.5s linear;
 }
 .hidden{
-    display: none;
+    opacity: 0;
+    visibility: hidden;
 }
 .card-title{
     color: #8E2DE2;
@@ -44,8 +46,7 @@
 .option-box{
     border: 1px solid black;
     border-radius: 60px;
-    padding: 1vh 1vw;
-
+    padding: 1vh 2vw;
 }
 
 .option-box:hover{

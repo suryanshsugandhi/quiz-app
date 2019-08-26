@@ -4,29 +4,29 @@
           <div id="question-no">
             1/15
           </div>
-          <div id="none-selected" class="bg-danger hidden">
+          <div id="none-selected" class="hidden text-left">
             Please select an option to continue!
           </div>
             <div class="card-title">
-              Who hosted Invento in 2018?
+              {{questions[0][0].title}}
             </div> 
 
-            <div id="options" class="my-2">
+            <div id="options" class="m-2">
               <div class="option row">
-                <div class="col-2"><strong>A.</strong></div>
-                <div (click)="selectOption('a')" [class.selected]="selected=='a'" class="col-10 option-box">RJ Navneet</div>
+                <div class="col-1"><strong>A</strong></div>
+                <div (click)="selectOption('a')" [class.selected]="selected=='a'" class="col-11 option-box">RJ Navneet</div>
               </div>
               <div class="option row">
-                  <div class="col-2"><strong>B.</strong></div>
-                  <div (click)="selectOption('b')" [class.selected]="selected=='b'" class="col-10 option-box">RJ Gaurav</div>
+                  <div class="col-1"><strong>B</strong></div>
+                  <div (click)="selectOption('b')" [class.selected]="selected=='b'" class="col-11 option-box">RJ Gaurav</div>
                 </div>
                 <div class="option row">
-                    <div class="col-2"><strong>C.</strong></div>
-                    <div (click)="selectOption('c')" [class.selected]="selected=='c'" class="col-10 option-box">RJ Raunak</div>
+                    <div class="col-1"><strong>C</strong></div>
+                    <div (click)="selectOption('c')" [class.selected]="selected=='c'" class="col-11 option-box">RJ Raunak</div>
                   </div>
                   <div class="option row">
-                      <div class="col-2"><strong>D.</strong></div>
-                      <div (click)="selectOption('d')" [class.selected]="selected=='d'" class="col-10 option-box">RJ Pritam</div>
+                      <div class="col-1"><strong>D</strong></div>
+                      <div (click)="selectOption('d')" [class.selected]="selected=='d'" class="col-11 option-box">RJ Pritam</div>
                     </div>
             </div>
           <div id="buttons">
