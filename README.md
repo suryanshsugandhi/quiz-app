@@ -1,5 +1,7 @@
 # QuizApp
 
+This web application serves random trivia questions from a pool of 200+ questions on Invento (IET DAVV's techfest). The project is developed on the MEAN stack.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
 
 ## Development server
